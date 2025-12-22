@@ -119,8 +119,8 @@ insert into empTest values
 (1,'CEO',hierarchyid::GetRoot()),		-- root parent
 (2,'CTO',hierarchyid::Parse('/1/')),	-- child 1
 (3,'CFO',hierarchyid::Parse('/2/')),	-- child 2
-(4,'Developer',hierarchyid::Parse('/1/1/')),		-- ancestor
-(5,'Tester',hierarchyid::Parse('/1/2/'))		-- ancestor
+(4,'Developer',hierarchyid::Parse('/1/1/')),		-- child 1 of child 1
+(5,'Tester',hierarchyid::Parse('/1/2/'))		-- child 2 of child 1
 ---> Manually assigning paths like /1/, /2/ is dangerous in real systems.	************
 
 -- get root parent
